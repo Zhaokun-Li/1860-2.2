@@ -1,7 +1,7 @@
-    @R4         
-    M=0         
+    @R4
+    M=0        
 
-    @R1         
+    @R1
     D=M
     @DIV_ZERO
     D;JEQ       
