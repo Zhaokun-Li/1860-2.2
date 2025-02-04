@@ -93,7 +93,7 @@
     @R6
     D=M
     @NEG_M
-    D;JLT
+    D;JEQ
     @END
     0;JMP
 
