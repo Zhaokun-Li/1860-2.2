@@ -1,7 +1,7 @@
     @R4         
     M=0
     @R5
-    M=1          
+    M=0          
 
     @R1         
     D=M
@@ -57,7 +57,7 @@
     @R5
     D=M
     @NEG_Q
-    D;JEQ         
+    D;JLT         
 
     @END
     0;JMP       
