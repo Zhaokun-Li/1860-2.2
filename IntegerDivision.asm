@@ -64,15 +64,15 @@
 
 (NEG_X)
     @X_COPY
-    M=-M        
+    M=-M
+    @R5
+    M=M-1         
     @LOOP
     0;JMP       
 
 (NEG_Y)
     @Y_COPY
-    M=-M
-    @R5
-    M=M-1         
+    M=-M        
     @LOOP
     0;JMP
 
