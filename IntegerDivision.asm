@@ -79,6 +79,8 @@
 (NEG_Q)
     @R3
     M=-M
+    @END
+    0;JMP
       
 
 (DIV_ZERO)
