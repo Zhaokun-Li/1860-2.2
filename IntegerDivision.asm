@@ -85,6 +85,11 @@
 (NEG_Q)
     @R3
     M=-M
+    
+    @MID
+    0;JMP
+
+(MID)
     @R6
     D=M
     @NEG_M
