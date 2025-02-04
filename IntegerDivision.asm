@@ -1,5 +1,7 @@
     @R4         
-    M=0         
+    M=0
+    @R5
+    M=1          
 
     @R1         
     D=M
@@ -51,22 +53,36 @@
     @X_COPY
     D=M
     @R3
-    M=D         
+    M=D
+    @R5
+    D=M
+    @NEG_Q
+    D;JEQ         
 
     @END
     0;JMP       
 
 (NEG_X)
     @X_COPY
-    M=-M        
+    M=-M
+    @R5
+    M=M-1        
     @LOOP
     0;JMP       
 
 (NEG_Y)
     @Y_COPY
-    M=-M        
+    M=-M
+    @R5
+    M=M-1         
     @LOOP
-    0;JMP       
+    0;JMP
+
+(NEG_Q)
+    @R3
+    M=-M
+    @R2
+    M=-M       
 
 (DIV_ZERO)
     @R4
