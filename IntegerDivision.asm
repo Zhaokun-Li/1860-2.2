@@ -31,6 +31,30 @@
     @NEG_Y
     D;JLT       
 
+    @X_SIGN
+    M=1         
+    @X_COPY
+    D=M
+    @POS_X
+    D;JGE       
+    @X_SIGN
+    M=-1        
+    @X_COPY
+    M=-M        
+
+(POS_X)
+    @Y_SIGN
+    M=1         
+    @Y_COPY
+    D=M
+    @POS_Y
+    D;JGE       
+    @Y_SIGN
+    M=-1        
+    @Y_COPY
+    M=-M        
+
+(POS_Y)
 (LOOP)
     @X_COPY
     D=M
@@ -52,6 +76,18 @@
     D=M
     @R3
     M=D         
+
+    @X_SIGN
+    D=M
+    @Y_SIGN
+    D=D*M
+    @R2
+    M=D*M        
+
+    @X_SIGN
+    D=M
+    @R3
+    M=D*M        
 
     @END
     0;JMP       
