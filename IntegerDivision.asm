@@ -64,9 +64,7 @@
 
 (NEG_X)
     @X_COPY
-    M=-M
-    @R5
-    M=M-1        
+    M=-M        
     @LOOP
     0;JMP       
 
@@ -81,8 +79,7 @@
 (NEG_Q)
     @R3
     M=-M
-    @R2
-    M=-M       
+      
 
 (DIV_ZERO)
     @R4
