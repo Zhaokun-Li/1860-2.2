@@ -61,7 +61,7 @@
     @NEG_Q
     D;JLT         
 
-    @END
+    @MID
     0;JMP       
 
 (NEG_X)
