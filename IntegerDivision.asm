@@ -99,7 +99,7 @@
 
 (NEG_M)
     @R2
-    M=-M
+    M=-M       //take the quotient as negative
     @END
     0;JMP
       
