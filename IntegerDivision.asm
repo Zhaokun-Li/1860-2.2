@@ -58,8 +58,8 @@
     M=D        //R3=remainder
     @R5
     D=M
-    @NEG_Q
-    D;JLT      //if the original dividend is negative, the result should be negative   
+    @NEG_M
+    D;JLT      //if the original dividend is negative, the remainder should be negative   
 
     @MID
     0;JMP       
@@ -82,7 +82,7 @@
     @LOOP
     0;JMP
 
-(NEG_Q)
+(NEG_M)
     @R3
     M=-M       //take the remainder as negative
     
@@ -92,12 +92,12 @@
 (MID)
     @R6
     D=M
-    @NEG_M
+    @NEG_Q
     D;JEQ      //if need to take a negative quotient, jump
     @END
     0;JMP
 
-(NEG_M)
+(NEG_Q)
     @R2
     M=-M       //take the quotient as negative
     @END
