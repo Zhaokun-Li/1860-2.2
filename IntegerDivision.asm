@@ -101,7 +101,7 @@
     @R2
     M=-M       //take the quotient as negative
     @END
-    0;JMP
+    0;JMP 
       
 
 (DIV_ZERO)
